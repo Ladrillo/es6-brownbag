@@ -122,13 +122,13 @@
 {
     // 7 TAG FUNCTIONS    
     
-    let [a, b] = [13, 17];
+    // let [a, b] = [13, 17];
 
-    let myTagFunction = function (words, ...values) {
-        // does stuff
-    };
+    // let myTagFunction = function (words, ...values) {
+    //     // does stuff
+    // };
 
-    let result = myTagFunction `I have ${a} brothers and ${b} sisters`;
+    // let result = myTagFunction `I have ${a} brothers and ${b} sisters`;
 }
 
 
@@ -234,7 +234,7 @@
         greet() {
             // let that = this;
             setTimeout(function () {
-                // alert(`Hi there! My name is ${that.name}`);
+                // alert(`Hi there! My name is ${this.name}`);
             }, 500);
         }
     }
