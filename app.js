@@ -76,7 +76,7 @@
         console.log(stuff);
     };
 
-    foo('my boss', 'my friends');
+    foo('my family', 'my friends');
 
     let bar = function (a = 'default', ...stuff) {
         console.log(a, stuff);
@@ -109,6 +109,13 @@
     
     let [a, b] = ['jeremy', 'cahlan'];
     console.log(`these are ${a} and ${b}!`);
+    
+    // multiline strings
+    let greet = `
+        hello
+        there
+        `;
+    console.log(greet);
 }
 
 
@@ -225,8 +232,9 @@
             this.name = name;
         }
         greet() {
+            // let that = this;
             setTimeout(function () {
-                // alert(`Hi there! My name is ${this.name}`);
+                // alert(`Hi there! My name is ${that.name}`);
             }, 500);
         }
     }
